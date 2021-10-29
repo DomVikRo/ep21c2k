@@ -53,7 +53,7 @@ osz=0
 fs = int(input("5. feladat: Kérem adja meg a feladat sorszámát: "))
 print(fs)
 x=0
-
+fs=fs-1
 id=a[x]
 szam = id[6:20]
 for i in a:
@@ -77,16 +77,16 @@ szam=""
 for i in a:
     id=a[x]
     szam=id[6:20]
-    for j in range(12):
-        if (helyes[y] == szam[y] and y >= 0 and y <= 4):
-            vsz += 3
-        if (helyes[y] == szam[y] and y >= 5 and y <= 9):
-            vsz += 4
-        if (helyes[y] == szam[y] and y >= 10 and y <= 12):
-            vsz += 5
-        if (helyes[y] == szam[y] and y == 13):
-            vsz += 6
-        y+=1
+    id = a[h]
+    for j in range(14):
+        if helyes[j] == id[j] and  j>=0 and j<=5:
+            vsz+=3
+        if helyes[j] == id[j] and  j>=5 and j<=9:
+            vsz+=4
+        if helyes[j] == id[j] and  j>=10 and j<=12:
+            vsz+=5
+        if helyes[j] == id[j] and  j==13:
+            vsz+=6
     er.append(vsz)
     x+=1
 z=0
